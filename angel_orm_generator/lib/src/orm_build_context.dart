@@ -300,16 +300,27 @@ ColumnType inferColumnType(DartType type) {
   return null;
 }
 
+IndexType indexTypeForAccessor(String accessor) {
+  switch (accessor) {
+    case 'IndexType.unique':
+      return IndexType.unique;
+    case 'IndexType.standardIndex':
+      return IndexType.standardIndex;
+    case 'IndexType.none':
+    default:
+      return IndexType.none;
+  }
+}
+
 Column reviveColumn(ConstantReader cr) {
   ColumnType columnType;
 
-  var indexTypeObj = cr.peek('indexType')?.objectValue;
+  var indexTypeObj = cr.peek('indexType').objectValue;
   indexTypeObj ??= cr.revive().namedArguments['indexType'];
-
   var columnObj =
       cr.peek('type')?.objectValue?.getField('name')?.toStringValue();
-  var indexType = IndexType.values[
-      indexTypeObj?.getField('index')?.toIntValue() ?? IndexType.none.index];
+  var indexType =
+      indexTypeForAccessor(cr.peek('indexType')?.revive()?.accessor);
 
   if (const TypeChecker.fromRuntime(PrimaryKey)
       .isAssignableFromType(cr.objectValue.type)) {
@@ -353,6 +364,7 @@ class _ColumnType implements ColumnType {
 class RelationFieldImpl extends ShimFieldImpl {
   final FieldElement originalField;
   final RelationshipReader relationship;
+
   RelationFieldImpl(
       String name, this.relationship, DartType type, this.originalField)
       : super(name, type);
