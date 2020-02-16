@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/angel_migration">
-      <excludeFolder url="file://$MODULE_DIR$/angel_migration/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_migration/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_migration/build" />
-    </content>
-    <content url="file://$MODULE_DIR$/angel_migration_runner">
-      <excludeFolder url="file://$MODULE_DIR$/angel_migration_runner/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_migration_runner/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_migration_runner/build" />
-    </content>
     <content url="file://$MODULE_DIR$/angel_orm">
       <excludeFolder url="file://$MODULE_DIR$/angel_orm/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/angel_orm/.pub" />
@@ -20,31 +10,6 @@
       <excludeFolder url="file://$MODULE_DIR$/angel_orm_generator/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/angel_orm_generator/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/angel_orm_generator/build" />
-    </content>
-    <content url="file://$MODULE_DIR$/angel_orm_mysql">
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_mysql/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_mysql/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_mysql/build" />
-    </content>
-    <content url="file://$MODULE_DIR$/angel_orm_postgres">
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_postgres/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_postgres/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_postgres/build" />
-    </content>
-    <content url="file://$MODULE_DIR$/angel_orm_service">
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_service/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_service/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_service/build" />
-    </content>
-    <content url="file://$MODULE_DIR$/angel_orm_sqlite">
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_sqlite/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_sqlite/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_sqlite/build" />
-    </content>
-    <content url="file://$MODULE_DIR$/angel_orm_test">
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_test/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_test/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/angel_orm_test/build" />
     </content>
     <content url="file://$MODULE_DIR$/external">
       <excludeFolder url="file://$MODULE_DIR$/external/.pub" />
